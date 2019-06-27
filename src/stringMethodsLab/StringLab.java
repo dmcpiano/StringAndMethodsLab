@@ -25,8 +25,8 @@ public class StringLab {
 		String s = "hilarious"; // scnr.nextLine();
 		reverse(s);
 		
-		/*System.out.println("Enter two words. "); 
-		soLong("happy", "birthday");*/
+		System.out.println("Enter two words. "); 
+		soLong("happy", "birthday");
 		
 		System.out.println("Enter a phrase containing the word 'math'. "); 
 		afterMath("I enjoy math and physics. ");
@@ -74,13 +74,13 @@ public class StringLab {
         
 	}
 	
-	/*public static void soLong(String a, String b) { 
+	public static void soLong(String a, String b) { 
 		
-		if (a.length() == b.length()); {
+		if (a.length() == b.length()) {
 			
 			System.out.println(a + " " + b);
 			
-		} else (a.length() > b.length()); {
+		} else if (a.length() > b.length()) {
 			
 			System.out.println(a);
 			
@@ -89,7 +89,7 @@ public class StringLab {
 			System.out.println(b);
 			
 		}	
-	}*/
+	}
 	
 	public static void afterMath(String phrase) {
         
