@@ -25,14 +25,11 @@ public class StringLab {
 		String s = "hilarious"; // scnr.nextLine();
 		reverse(s);
 		
-		/*System.out.println("Enter two words. "); // hit a wall with soLong exercise 
-		a = "happy"; // scnr.next();
-		b = "birthday"; // scnr.next();
-		System.out.println(soLong(a, b)); */
+		/*System.out.println("Enter two words. "); 
+		soLong("happy", "birthday");*/
 		
-		System.out.println("Enter a phrase containing the word 'math'. "); //can't figure out how to do after the word math, keeps returning before the word
-		phrase = "I enjoy math and physics the most. ";
-		afterMath(phrase);
+		System.out.println("Enter a phrase containing the word 'math'. "); 
+		afterMath("I enjoy math and physics. ");
 		
 		System.out.println("Enter a word. ");
 		word = "orange"; //scnr.nextLine();
@@ -77,40 +74,36 @@ public class StringLab {
         
 	}
 	
-/*public static String soLong(String a, String b) { // hit a wall with this exercise
+	/*public static void soLong(String a, String b) { 
 		
-		Scanner scnr = new Scanner(System.in);
-		
-		boolean soLong = (a.length() > b.length());
-		
-		if soLong {
+		if (a.length() == b.length()); {
+			
+			System.out.println(a + " " + b);
+			
+		} else (a.length() > b.length()); {
 			
 			System.out.println(a);
 			
 		} else {
-			
+		
 			System.out.println(b);
-		}
 			
-	}	*/
+		}	
+	}*/
 	
-	public static void afterMath(String phrase) { //can't figure out how to do after the word math, keeps returning before the word
-		
-		phrase = phrase.toLowerCase();
-		phrase.indexOf("math");
-		
-		int afterMath = phrase.indexOf("math");
-		
-	    if (afterMath >= 0) {
-		 System.out.println(phrase.substring(0, afterMath));
-		 
-		} else {
-				System.out.println("dud");
-	    }
-	    
+	public static void afterMath(String phrase) {
+        
+        int userInput = phrase.toLowerCase().indexOf("math");
+        
+          if( userInput != -1) {
+             System.out.println(phrase.substring(userInput));
+             
+          } else {
+             System.out.println("dud");
+          }
+	
 	}
-	
-	public static void letterize (String word) {
+     public static void letterize (String word) {
 		
 		for(char a : word.toCharArray()){
             System.out.println(a);
